@@ -26,6 +26,19 @@
 
 > go run FILE.go
 
+#### Executando testes
+
+> go test ./...
+
+> go test ./... -cover
+
+##### Gerando coverage em html
+>go test ./... -coverprofile=result.out
+>
+>go tool cover -func=result.out
+>
+>go tool cover -html=result.out
+
 
 ### Concorrência vs Paralelismo
 
